@@ -1,0 +1,288 @@
+/* start variabules  */
+:root {
+  --mainColor: rgb(8, 8, 8);
+  --secondColor: #142230;
+  --t3tdColor: #95a2aa;
+  --f4thColor: #f3f4f8e0;
+  --f5thColor: white;
+  --transperntColor: ;
+  --sectionpadding: ;
+  --componentsbg: ;
+  --secondbg: ;
+  --sectionmagin: ;
+}
+/* end variabules */
+
+/* start gloubal rules */
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+}
+::-moz-selection {
+  color: var(--secondColor);
+  background-color: var(--mainColor);
+}
+::selection {
+  color: var(--mainColor);
+  background-color: var(--f4thColor);
+}
+body {
+  font-family: "work sans", sans-serif;
+  /* background-color: black; */
+}
+
+a {
+  color: var(--f4thColor);
+  text-decoration: none;
+}
+a:visited {
+  color: var(--f4thColor);
+}
+
+ul {
+  list-style: none;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* small  */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* med  */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* larg  */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* start components */
+/* end gloubal rules */
+/* ================================= */
+
+/* start header  */
+
+header {
+  background-color: var(--mainColor);
+  padding: 10px 100px;
+  width: 100%;
+  min-height: 50px;
+  position: fixed;
+  z-index: 2022;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  width: 20px;
+  height: 50px;
+}
+header .logo image {
+  width: 20px;
+  height: 50px;
+}
+
+nav a {
+  color: var(--f4thColor);
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-left: 30px;
+}
+
+nav a:hover {
+  color: var(--f5thColor);
+}
+
+/* end header  */
+/* section :start */
+section {
+  padding: 100px 50px;
+}
+
+.main-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(../Imgs/maonten.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  box-shadow: 0px 4px 6px #142230;
+}
+
+.main-section h2 {
+  color: var(--f5thColor);
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.main-section h2 span {
+  color: var(--f5thColor);
+  font-size: 2.5em;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 10px;
+}
+.main-section h3 {
+  color: var(--f4thColor);
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.main-btn {
+  background-color: var(--secondColor);
+  color: var(--f5thColor);
+  font-size: 1.2em;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.9375em;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  transition: 0.3s;
+}
+
+.main-btn:hover {
+  background-color: var(--mainColor);
+  transform: scale(1.1, 1.1);
+}
+.main-section .social-icons a {
+  color: white;
+  font-size: 1.7em;
+  padding-right: 30px;
+}
+.social-icons a:hover {
+  color: var(--secondColor);
+}
+/* section end  */
+/* start services  */
+.title {
+  display: flex;
+  justify-content: center;
+  color: var(--secondColor);
+  margin-bottom: 30px;
+  font-size: 2.2em;
+  font-weight: 800;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: var(--mainColor);
+  color: var(--f4thColor);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  width: 21.25em;
+  box-shadow: 0px 4px 5px #142230;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 7px #142230;
+}
+.card .text {
+  text-align: center;
+}
+
+.card .icon {
+  color: var(--f5thColor);
+  font-size: 8em;
+  text-align: center;
+}
+.card h3 {
+  margin: 10px 0;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.card p {
+  color: var(--f5thColor);
+}
+/* end services  */
+/* start potfolio  */
+
+#protfolio .title {
+  color: var(--f5thColor);
+}
+#protfolio .container {
+  margin-top: 30px;
+}
+
+#protfolio {
+  background-color: var(--mainColor);
+}
+.pro-card {
+  background-color: var(--f4thColor);
+  border: 1px solid var(--f4thColor);
+  min-height: 14em;
+  width: 20em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.3s ease;
+}
+
+.pro-card:hover .imge {
+  opacity: 0.9;
+}
+
+.pro-card .imge {
+  color: var(--f4thColor);
+}
+.pro-card .imge img {
+  width: 100%;
+}
+
+.pro-text {
+  padding: 1em;
+  background-color: var(--f4thColor);
+}
+
+.pro-text .project-category {
+  font-size: 0.8em;
+  color: var(--mainColor);
+}
+.pro-text .project-title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.more {
+  background-color: var(--secondColor);
+  padding: 10px;
+  transition: 0.3s ease;
+  border-radius: 10px;
+}
+
+.more:hover {
+  background-color: var(--mainColor);
+}
+/* end it  */
